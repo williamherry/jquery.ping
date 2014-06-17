@@ -13,12 +13,7 @@
       async: false
     }).responseText;
 
-    if (result == settings.expect) {
-      return true;
-    } else {
-      return false;
-    }
-
+    return result === settings.expect;
   }
 
 }(jQuery));
